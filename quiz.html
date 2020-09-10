@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Movie Binge Trivia</title>
+
+
+  <!-- CSS Sheets -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+
+  <!-- FONT OPTIONS -->
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon-2.png"/>
+
+</head>
+
+<body>
+
+<!-- Site Main Navigation -->
+<nav class="navbar is-transparent">
+  <div class="navbar-brand">
+      <a class="logo" href="index.html">Movie Binge</a>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </div>
+
+  <div class="navbar-menu">
+      <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+              <span class="pageLink">Home</span>
+          </a>
+          <a class="navbar-item" href="watchlist.html">
+              <span class ="pageLink">View Watch List</span>
+          </a>
+      </div>
+
+      <div class="navbar-end">
+          <div class="navbar-item">
+            <a class="button inviteBtn" href="quiz.html">
+              <!-- Invite to Watch -->
+              <p><span class="fa fa-bolt"></span>&ensp; Trivia Time!</p>
+          </a>
+          </div>
+      </div>
+  </div>
+</nav>
+
+
+
+
+  <div class="container">
+
+
+    <div id="game" class="justify-center flex-column">
+      <div id="hud">
+        <div id="hud-item">
+          <p id="progressText" class="hud-prefix">
+            Question
+          </p>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div id="hud-item">
+          <p class="hud-prefix">
+            Score
+          </p>
+          <h1 class="hud-main-text" id="score">
+            0
+          </h1>
+        </div>
+      </div>
+      
+      <p id="question">What is the answer to this questions?</p>
+      <div class="choice-container">
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1">Choice 1</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2">Choice 2</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">C</p>
+        <p class="choice-text" data-number="3">Choice 3</p>
+      </div>
+      <div class="choice-container">
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4">Choice 4</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Web Footer -->
+  <footer>
+    <h6> Find new movies and shows to <span class="fa fa-heart"></span>!</h6>
+</footer>
+
+
+  <!-- javascript -->
+  <script src="assets/js/trivia.js"></script>
+
+
+</body>
+
+</html>

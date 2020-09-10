@@ -1,0 +1,582 @@
+body{
+    width: 100%;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    padding-bottom: 6em;
+}
+
+main{
+    width: 100%;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+    font-weight:900;
+    font-size: 3.5em;
+    color:#390268;
+}
+
+h2{
+    font-weight: 700;
+    font-size:1.5em;
+    margin: 2em 0 .75em 5%;
+    color: #132133;
+}
+
+.navbar-burger, .burger, .burger:hover{
+    background-color:#fff;
+    color:#b216bf;
+
+}
+
+nav{
+    margin-bottom: 2em;
+    padding: .5em 2.5% .5em;
+    box-shadow: 0 5px 15px -3px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-family: 'Righteous', cursive;
+    font-size: 3em;
+    color:#390268;
+
+}
+
+.logo:hover, .logo:active, .logo:focus{
+    color:#390268;
+}
+
+.pageLink{
+    color:#390268;
+    font-weight: 700;
+}
+
+.pageLink:hover{
+    color:#16e3dd;
+}
+
+.navbar-menu{
+    color:#390268;
+    margin-left: 3%;
+}
+
+.inviteBtn{
+    background-color:#b216bf;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 5px 15px -3px rgba(0,0,0,.2);
+    padding-top: .5em;
+    border: none;
+}
+
+.inviteBtn:hover{
+    background-color:#16e3dd;
+    color:#fff ;
+    box-shadow: 0 5px 15px -3px rgba(0,0,0,.2);
+    border: none;
+}
+
+.inviteBtn:focus{
+    background-color:#16e3dd;
+    color: #fff;
+    box-shadow: 0 5px 15px -3px rgba(0,0,0,.2);
+    border: none;
+}
+
+.inviteBtn:active{
+    background-color:#16e3dd;
+    color: #fff;
+    box-shadow: 0 5px 15px -3px rgba(0,0,0,.2);
+    border: none;
+}
+
+
+.refresh-movie, .refresh-show{
+    border:none;
+    background-color: #FAFAFA;
+    color:#16e3dd;
+}
+
+
+#movie-scroll{
+    width: 100%;
+    height: 400px;
+
+}
+
+.gallery-cell {
+    width: 250px;
+    height: 350px;
+    padding: 0 1%;
+}
+
+.tv-cell {
+    width: 250px;
+    height: 350px;
+    padding: 0 1%;
+}
+
+.posterSize{
+    height: 100%;
+}
+
+
+/* view/hide dots */
+.flickity-page-dots {
+    display: none;
+}
+
+
+/* Button Changes */
+.flickity-button-icon{
+    color:#a546b3;
+}
+
+.flickity-button-icon:hover{
+    color:#13b9b4;
+}
+
+
+
+/* Popup Modal with Movie Info */
+.modal{
+    z-index: 10;
+    
+}
+
+.modal-card{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.modal-card-head{
+    background-color:#fff;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 8%;
+    padding-right: 5%;
+    box-shadow: 0 3px 15px -3px rgba(173, 173, 173, 0.5);
+}
+
+.modal-card-title{
+    width: 70%;
+    padding-right: 5%;
+    height: auto;
+    line-height: 1.25em;
+    font-weight: 700;
+}
+
+.delete{
+    background-color:#16e3dd;
+}
+
+.modal-card-body{
+    padding: 0 0 0 8%;
+    margin: 0;
+    color: #132133;
+}
+
+.data-header{
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.modal-card-foot{
+    border:none;
+    background-color:#fff;
+    padding: 2em 0 1.75em 8%;
+}
+
+.addMov{
+    background-color:#16e3dd;
+    color: #fff;
+    box-shadow: 0 3px 10px -3px rgba(0,0,0,.2);
+}
+
+.addMov:hover, .addMov:active{
+    background-color:#13b9b4;
+    color: #fff;
+    box-shadow: 0 3px 10px -3px rgba(0,0,0,.2);
+}
+
+
+
+/* Watch List Movies */
+.saved-movies{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    display: block;
+    height: auto;
+    margin: 1em 10%;
+    padding: 1em 5%;
+    border-radius: 5px;
+    }
+
+.card-image img{
+    width: 370px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+.card-content{
+    padding:1em 5% 0 5%;
+}
+
+.title{
+    width: 280px;
+    height: 50px;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    color: #16283f;
+}
+
+
+/* Review Modal */
+
+.review{
+    padding-top: 2em;
+    line-height: 1.75em;
+    color: #16283f;
+}
+
+.user{
+    padding-top: 2em;
+    font-size: 14px;
+    font-weight: 700;
+    color: #555555;
+}
+
+.reviewBtn{
+    background-color: #a546b3;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 4%;
+    color: #fff;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,.2);
+    border:none;
+}
+
+.reviewBtn:hover{
+    background-color: #16e3dd;
+    color: #fff;
+    border:none;
+}
+
+
+.rmvButton{
+    background-color:#d7aade;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,.2);
+    border:none;
+}
+
+.rmvButton:hover{
+    background-color:#a0e0de;
+    color: #fff;
+    border:none;
+}
+
+
+
+
+/* Quiz CSS */
+.container { 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#game{
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 5%;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.25em;
+    border-radius: 5px;
+    border: 1px solid #a546b3;
+    cursor: pointer;
+}
+
+.choice-container:hover {
+    border: 3px solid #b216bf;
+    cursor: pointer;
+}
+
+.choice-prefix {
+    padding: 1.25rem 2.5rem;
+    background-color: #a546b3;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 1em;
+    width: 100%;
+}
+
+.correct {
+    color: #16e3dd;
+    border: 5px solid #16e3dd;
+    transition: transform 150ms;
+}
+
+.incorrect, .incorrect:active, .incorrect:focus .incorrect:hover {
+    color: #dc3545;
+    border: 5px solid #dc3545;
+    transition: transform 150ms;
+}
+
+
+/* HUD */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: left;
+    font-size: 1.25rem;
+}
+
+.hud-main-text {
+    text-align: center;
+    font-size: 2em;
+}
+
+#progressBar {
+    width: 15rem;
+    height: 3rem;
+    border: 0.3rem solid #a546b3;
+}
+
+#progressBarFull {
+    height: 2.4rem;
+    background-color: #d7aade;
+    width: 0%;
+}
+
+  /* UTILITIES */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+#question{
+    font-size: 1.5em;
+    margin: 2em 0 1em 0;
+}
+
+
+/* Page Footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    background: #0f011b;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+    /*Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .modal-card{
+        width: 90%;
+    }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 1em 1%;
+        padding: 1em 5%;
+        border-radius: 5px;
+        }
+
+        .card-image img{
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .card-content{
+            padding:1em 0 0 0;
+        }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .modal-card{
+        width: 80%;
+    }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 1em 1%;
+        padding: 1em 5%;
+        border-radius: 5px;
+        }
+
+        .card-image img{
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .card-content{
+            padding:1em 0 0 0;
+        }
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .modal-card{
+        width: 60%;
+    }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 1em 1%;
+        padding: 1em 1%;
+        border-radius: 5px;
+        }
+
+        .card-image img{
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .card-content{
+            padding:1em 0 0 0;
+        }
+
+    #game{
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em 5%;
+    }
+
+    #question{
+        font-size: 2em;
+        margin: 2em 0 1em 0;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .modal-card{
+        width: 50%;
+    }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 1em 1%;
+        padding: 1em 1%;
+        border-radius: 5px;
+        }
+
+        .card-image img{
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .card-content{
+            padding:1em 0 0 0;
+        }
+
+    #game{
+        width: 90%;
+        margin: 0 auto;
+        padding: 2em 5%;
+    }
+
+    #question{
+        font-size: 2em;
+        margin: 2em 0 1em 0;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #movie-scroll{
+        margin: 1em 0;
+    }
+
+    .gallery-cell {
+        width: 300px;
+        height: 400px;
+    }
+
+    .tv-cell {
+        width: 300px;
+        height: 400px;
+    }
+
+    .card {
+        display: inline-block;
+        height: auto;
+        margin: 1em 1%;
+        padding: 1em 1%;
+        border-radius: 5px;
+        }
+
+        .card-image img{
+            width: 300px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        
+        .card-content{
+            padding:1em 0 0 0;
+        }
+
+
+    .modal-card{
+        width: 50%;
+    }
+
+    #game{
+        width: 70%;
+        margin: 0 auto;
+        padding: 2em 5%;
+    }
+
+    #question{
+        font-size: 2em;
+        margin: 2em 0 1em 0;
+    }
+
+} 

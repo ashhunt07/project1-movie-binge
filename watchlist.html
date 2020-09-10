@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <title>Movie Binge | Fine and Share New Media</title>
+
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Javasctipt -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/watchList.js"></script>
+
+    <!-- FONT OPTIONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon-2.png"/>
+
+</head>
+
+<!-- Start of Body -->
+
+<body>
+
+<!-- Site Main Navigation -->
+<nav class="navbar is-transparent">
+    <div class="navbar-brand">
+        <a class="logo" href="index.html">Movie Binge</a>
+        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+                <span class="pageLink">Home</span>
+            </a>
+            <a class="navbar-item" href="watchlist.html">
+                <span class ="pageLink">View Watch List</span>
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <a class="button inviteBtn" href="quiz.html">
+                    <!-- Invite to Watch -->
+                    <p><span class="fa fa-bolt"></span>&ensp; Trivia Time!</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Main Content -->
+    <section class="saved-movies is-mobile">
+
+    </section>
+
+            <!-- Pop up with Review -->
+            <div class="modal is-mobile">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <div class="modal-card-head">
+                        <p class="modal-card-title"></p>
+                        <button class="delete" aria-label="close"></button>
+                    </div>
+                    <section class="modal-card-body">
+                        <div>
+                            <!-- <p class="data-header"></p> -->
+                            <p class="review innertext"></p>
+                        </div>
+                        <div>
+                            <!-- <p class="data-header"></p> -->
+                            <p class="user innertext"></p>
+                        </div>
+                    </section>
+                    <div class="modal-card-foot">
+                        <button class="button addMov">Close</button>
+                        <div class="hiddenId" style="display: none;"></div>
+                        <!-- <button class="button cancelBtn">Cancel</button> -->
+                    </div>
+                </div>
+            </div>
+
+    <!-- Web Footer -->
+    <footer>
+        <h6> Find new movies and shows to <span class="fa fa-heart"></span>!</h6>
+    </footer>
+
+
+
+    <!-- Script to make Hamburger function -->
+    <script>
+
+        $(document).ready(function() {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+        });
+
+    </script>
+
+
+</body>
+
+</html>
